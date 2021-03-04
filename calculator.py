@@ -20,80 +20,77 @@ def sum_count():
         SomaLabel.place(rely=.65, relx=.5, anchor=CENTER)
     BttonCalculate = Button(top, text="Calculate", command=calculate)
     BttonCalculate.place(rely=.5, relx=.5, anchor=CENTER)
-def subtração():
+def subtraction():
     top = Toplevel()
     top.geometry("250x200")
-    SubtraçãoTítuloLabel = Label(top, text="Subtração", font="Roboto 14 bold italic underline")
-    SubtraçãoTítuloLabel.place(rely=.1, relx=.5, anchor=CENTER)
-    Entry1Subtração = Entry(top)
-    Entry2Subtração = Entry(top)
-    Entry1Subtração.place(rely=.25, relx=.5, anchor=CENTER)
-    Entry2Subtração.place(rely=.35, relx=.5, anchor=CENTER)
-    def calcular():
-        num1 = int(Entry1Subtração.get())
-        num2 = int(Entry2Subtração.get())
-        subtração = num1 - num2
-        subtração = str(subtração)
-        SubtraçãoLabel = Label(top, text=subtração, fg="red", font="roboto 10 bold")
-        SubtraçãoLabel.place(rely=.65, relx=.5, anchor=CENTER)
-    BotãoCalcular = Button(top, text="Calcular", command=calcular)
-    BotãoCalcular.place(rely=.5, relx=.5, anchor=CENTER)
-def multiplicação():
+    SubtractionTítuloLabel = Label(top, text="Subtraction", font="Roboto 14 bold italic underline")
+    SubtractionTítuloLabel.place(rely=.1, relx=.5, anchor=CENTER)
+    Entry1Subtraction = Entry(top)
+    Entry2Subtraction = Entry(top)
+    Entry1Subtraction.place(rely=.25, relx=.5, anchor=CENTER)
+    Entry2Subtraction.place(rely=.35, relx=.5, anchor=CENTER)
+    def calculate():
+        num1 = int(Entry1Subtraction.get())
+        num2 = int(Entry2Subtraction.get())
+        subtraction = num1 - num2
+        subtraction = str(subtraction)
+        SubtractionLabel = Label(top, text=subtraction, fg="red", font="roboto 10 bold")
+        SubtractionLabel.place(rely=.65, relx=.5, anchor=CENTER)
+    BttonCalculate = Button(top, text="Calculate", command=calculate)
+    BttonCalculate.place(rely=.5, relx=.5, anchor=CENTER)
+def multiplication():
     top = Toplevel()
     top.geometry("250x200")
-    MultiplicaçãoTítuloLabel = Label(top, text="Multiplicação", font="Roboto 14 bold italic underline")
-    MultiplicaçãoTítuloLabel.place(rely=.1, relx=.5, anchor=CENTER)
-    Entry1Multiplicação = Entry(top)
-    Entry2Multiplicação = Entry(top)
-    Entry1Multiplicação.place(rely=.25, relx=.5, anchor=CENTER)
-    Entry2Multiplicação.place(rely=.35, relx=.5, anchor=CENTER)
-    def calcular():
-        num1 = int(Entry1Multiplicação.get())
-        num2 = int(Entry2Multiplicação.get())
-        multiplicação = num1 * num2
-        MultiplicaçãoLabel = Label(top, text=multiplicação, fg="red", font="roboto 10 bold")
-        MultiplicaçãoLabel.place(rely=.65, relx=.5, anchor=CENTER)
-    BotãoCalcular = Button(top, text="Calcular", command=calcular)
-    BotãoCalcular.place(rely=.5, relx=.5, anchor=CENTER)
-def divisão():
+    MultiplicationTítuloLabel = Label(top, text="Multiplication", font="Roboto 14 bold italic underline")
+    MultiplicationTítuloLabel.place(rely=.1, relx=.5, anchor=CENTER)
+    Entry1Multiplication = Entry(top)
+    Entry2Multiplication= Entry(top)
+    Entry1Multiplication.place(rely=.25, relx=.5, anchor=CENTER)
+    Entry2Multiplication.place(rely=.35, relx=.5, anchor=CENTER)
+    def calculate():
+        num1 = int(Entry1Multiplication.get())
+        num2 = int(Entry2Multiplication.get())
+        multiplication = num1 * num2
+        MultiplicationLabel = Label(top, text=multiplication, fg="red", font="roboto 10 bold")
+        MultiplicationLabel.place(rely=.65, relx=.5, anchor=CENTER)
+    BttonCalculate = Button(top, text="Calcular", command=calculate)
+    BttonCalculate.place(rely=.5, relx=.5, anchor=CENTER)
+def division():
     top = Toplevel()
     top.geometry("250x200")
-    DivisãoTítuloLabel = Label(top, text="Divisão", font="Roboto 14 bold italic underline")
-    DivisãoTítuloLabel.place(rely=.1, relx=.5, anchor=CENTER)
-    Entry1Divisão = Entry(top)
-    Entry2Divisão = Entry(top)
-    Entry1Divisão.place(rely=.25, relx=.5, anchor=CENTER)
-    Entry2Divisão.place(rely=.35, relx=.5, anchor=CENTER)
-    def calcular():
-        num1 = int(Entry1Divisão.get())
-        num2 = int(Entry2Divisão.get())
-        divisão = num1 / num2
-        DivisãoLabel = Label(top, text=divisão, fg="red", font="roboto 10 bold")
-        DivisãoLabel.place(rely=.65, relx=.5, anchor=CENTER)
-    BotãoCalcular = Button(top, text="Calcular", command=calcular)
-    BotãoCalcular.place(rely=.5, relx=.5, anchor=CENTER)
+    DivisionTitleLabel = Label(top, text="Division", font="Roboto 14 bold italic underline")
+    DivisionTitleLabel.place(rely=.1, relx=.5, anchor=CENTER)
+    Entry1Division = Entry(top)
+    Entry2Division = Entry(top)
+    Entry1Division.place(rely=.25, relx=.5, anchor=CENTER)
+    Entry2Division.place(rely=.35, relx=.5, anchor=CENTER)
+    def calculate():
+        num1 = int(Entry1Division.get())
+        num2 = int(Entry2Division.get())
+        division = num1 / num2
+        DivisionLabel = Label(top, text=division, fg="red", font="roboto 10 bold")
+        DivisionLabel.place(rely=.65, relx=.5, anchor=CENTER)
+    BttonCalculate = Button(top, text="Calcular", command=calculate)
+    BttonCalculate.place(rely=.5, relx=.5, anchor=CENTER)
     
-def menu():
-    pass
-#Configurando a raiz da interface
+#Configuring the root of the interface
 root = Tk()
-root.title(" Mini-calculadora")
+root.title(" Mini-Calculator")
 root.geometry("500x300")
 
-#Configurações do título
-TítuloLabel = Label(root, text="Escolha uma das opções abaixo", font="Roboto 20 bold italic underline")
-TítuloLabel.place(rely=.1, relx=.5, anchor=CENTER)
+#Title configs
+TitleLabel = Label(root, text="Choose one of the options below", font="Roboto 20 bold italic underline")
+TitleLabel.place(rely=.1, relx=.5, anchor=CENTER)
 
-#Configuração dos botões
-BotãoAdição = Button(root, text="Sum", font="Roboto 11 italic", width=50, command=sum_count)
-BotãoSubtração = Button(root, text="Subtração", font="Roboto 11 italic", width=50, command=subtração)
-BotãoMultiplicação = Button(root, text="Multiplicação", font="Roboto 11 italic", width=50, command=multiplicação)
-BotãoDivisão = Button(root, text="Divisão", font="Roboto 11 italic", width=50, command=divisão)
-BotãoMenu = Button(root, text="Retornar ao menu", font="Roboto 11 italic", width=50, command=menu)
-BotãoAdição.place(rely=.25, relx=.5, anchor=CENTER)
-BotãoSubtração.place(rely=.35, relx=.5, anchor=CENTER)
-BotãoMultiplicação.place(rely=.45, relx=.5, anchor=CENTER)
-BotãoDivisão.place(rely=.55, relx=.5, anchor=CENTER)
+#Buttons Config
+ButtonSum = Button(root, text="Sum", font="Roboto 11 italic", width=50, command=sum_count)
+ButtonSubtraction = Button(root, text="Subtraction", font="Roboto 11 italic", width=50, command=subtraction)
+ButtonMultiplication = Button(root, text="Multiplication", font="Roboto 11 italic", width=50, command=multiplication)
+ButtonDivision = Button(root, text="Division", font="Roboto 11 italic", width=50, command=division)
+ButtonSum.place(rely=.25, relx=.5, anchor=CENTER)
+ButtonSubtraction.place(rely=.35, relx=.5, anchor=CENTER)
+ButtonMultiplication.place(rely=.45, relx=.5, anchor=CENTER)
+ButtonDivision.place(rely=.55, relx=.5, anchor=CENTER)
 
-#Colocando em loop
+#Looping it
 root.mainloop()
