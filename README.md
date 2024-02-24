@@ -2,6 +2,9 @@
 > Uma calculadora básica, com uma interface básica.
 > A basic calculator, with a basic interface.
 
+#### DISCONTINUED - This repository will not receive new updates.
+#### DESCONTINUADO - Esse repositório não receberá novas atualizações.
+
 ## Instalação/Installing
 
 OS X & Linux:
